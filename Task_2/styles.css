@@ -1,0 +1,238 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  height: 100%;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background-image: url("images/p1.jpeg"); 
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 70vh;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ddd; 
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.subscribe-btn {
+  background-color: white;
+  color: black;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.subscribe-btn:hover {
+  background-color: #333;
+  color: white;
+}
+
+.center-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.center-content h1 {
+  font-size: 60px;
+  margin: 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+}
+
+.center-content p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* Main Section */
+.main-section {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); 
+  grid-template-rows: auto; 
+  gap: 20px; 
+  padding: 20px;
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+.box-1 {
+  display: grid;
+  grid-template-columns: 4fr 3fr; 
+  gap: 30px; 
+  align-items: center; 
+  padding: 0; 
+  background-color: transparent; 
+  border: none; 
+  box-shadow: none; 
+  border-radius: 0; 
+  overflow: hidden; 
+  grid-column: span 6; 
+  margin-bottom: 40px; 
+}
+
+.box-1 .photo {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.box-1 .photo img {
+  
+  max-width: 1800px;
+  height: 60vh; 
+  object-fit: cover; 
+  border-radius: 0; 
+}
+
+.box-1 .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left; /* Align text to the left */
+  padding: 0; /* Remove padding to fit content fully */
+}
+
+.box-1 .description h5 {
+  font-size: 18px; /* Slightly larger subtitle */
+  font-weight: 700; /* Make it bold */
+  color: #333; /* Dark color for "Getting Started" */
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.box-1 .description h2 {
+  font-size: 36px; /* Larger heading size */
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  color: #333; /* Dark color for the heading */
+}
+
+.box-1 .description p {
+  font-size: 16px; /* Adjust paragraph text size */
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.box-1 .description .meta {
+  font-size: 14px;
+  color: #333; /* Dark color for metadata */
+  font-weight: 700; /* Make it bold */
+  line-height: 1.4;
+  display: flex;
+  gap: 10px; /* Add spacing between date and reading time */
+}
+
+/* Second Row: Two boxes, each spanning 3 columns */
+.box-2, .box-3 {
+  grid-column: span 3; 
+  display: flex;
+  gap: 10px;
+}
+
+.box-2 img, .box-3 img {
+  width: 50%; 
+}
+
+.box-2 .content, .box-3 .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* Third and Fourth Rows: Three boxes, each spanning 2 columns */
+.box-4, .box-5, .box-6,
+.box-7, .box-8, .box-9 {
+  grid-column: span 2; 
+}
+
+.box-4 img, .box-5 img, .box-6 img,
+.box-7 img, .box-8 img, .box-9 img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Fifth and Sixth Rows: Full-width boxes */
+.box-10, .box-11 {
+  grid-column: span 6; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; 
+    padding: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main-section {
+    grid-template-columns: repeat(2, 1fr); 
+    padding: 10px;
+  }
+
+  .box-1 {
+    grid-template-columns: 1fr; 
+    height: auto; 
+  }
+
+  .box-2, .box-3 {
+    grid-column: span 2; 
+  }
+}
+
+/* Footer */
+.main-footer {
+  background-color: #444;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+}
