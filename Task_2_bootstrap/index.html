@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .head {
+            background-image: url(https://images.unsplash.com/photo-1557682250-33bd709cbe85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDI1fHxncmFkaWVudHxlbnwwfHx8fDE2NTMxOTA4NjY&ixlib=rb-1.2.1&q=80&w=2000);
+            height: 80vh;
+        }
+        .fs-6rem{
+            font-size: 6rem;
+            
+        }
+        .fs-2rem{
+            font-size:2.4rem;
+        }
+        .mar{
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid head">
+        <div class="head">
+            
+          <nav class="navbar navbar-expand-lg navbar-dark px-5    ">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse justify-content-between ps-5" id="navbarSupportedContent" >
+                    <!-- Left nav links -->
+                    <ul class="navbar-nav gap-4 ">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Collection</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Author</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Portal</a>
+                        </li>
+                    </ul>
+        
+                    <!-- Right sign in / sign up -->
+                    <div class="d-flex gap-4 ">
+                      <i class="bi bi-search text-white"></i>
+                        <a href="#" class="nav-link text-white">Sign In</a>
+                        <a href="#" class="nav-link text-white">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        
+            <div class="container-fluid  d-flex justify-content-center flex-column align-items-center mar">
+                <div class="fs-6rem text-white">Ghost</div>
+                <div class="fs-2rem text-white">The professional publishing platform</div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+          <div class="d-flex flex-wrap justify-content-between">
+            <!-- Left: Image -->
+            <div style="flex: 1 1 58%;">
+              <img 
+                src="https://demo.ghost.io/content/images/size/w1000/2022/05/welcome-to-ghost.png" 
+                class="img-fluid rounded" 
+                style="width: 100%; height: auto;" 
+                alt="Example Image"
+              >
+            </div>
+        
+            <!-- Right: Text block -->
+            <div class="ps-4 d-flex flex-column justify-content-start" style="flex: 1 1 42%;">
+              <div class="mb-4">
+                <small class="text-muted d-block mb-1">Getting Started</small>
+                <h3 class="fw-bold mb-2">Start here for a quick overview of everything you need to know</h3>
+                <p class="text-muted mb-1">
+                  We've crammed the most important information to help you get started with Ghost into this one post. 
+                  It's your cheat-sheet to get started, and your…
+                </p>
+                <small class="text-muted">18 Mar 2021 • 2 min read</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+     <!-- Existing content -->
+
+
+<!-- Two cards in one row using display flex -->
+<div class="container my-5">
+  <div class="d-flex flex-row flex-wrap justify-content-center gap-4">
+    <!-- Card 1 -->
+    <div class="card border-0" style="flex: 0 0 calc(50% - 1rem); max-width: calc(50% - 1rem); min-width: 300px;">
+      <img src="https://demo.ghost.io/content/images/size/w1000/2022/05/publishing-options.png" class="card-img-top rounded" alt="...">
+      <div class="card-body px-0">
+        <small class="text-muted">Getting Started</small>
+        <span class="badge bg-danger ms-2">Featured</span>
+        <h5 class="card-title fw-bold mt-2">Customizing your brand and design settings</h5>
+        <p class="card-text text-muted">How to tweak a few settings in Ghost to transform your site from a generic template to a custom brand with style and personality.</p>
+        <small class="text-muted">18 Mar 2021 · 3 min read</small>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card border-0" style="flex: 0 0 calc(50% - 1rem); max-width: calc(50% - 1rem); min-width: 300px;">
+      <img src="https://demo.ghost.io/content/images/size/w1000/2022/05/writing-posts-with-ghost.png" class="card-img-top rounded" alt="...">
+      <div class="card-body px-0">
+        <small class="text-muted">Getting Started</small>
+        <h5 class="card-title fw-bold mt-2">Writing and managing content in Ghost, an advanced guide</h5>
+        <p class="card-text text-muted">A full overview of all the features built into the Ghost editor, including powerful workflow automations to speed up your creative process.</p>
+        <small class="text-muted">18 Mar 2021 · 5 min read</small>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+      
+    
+    
+<div class="container my-5">
+  <div class="d-flex flex-row flex-wrap justify-content-center gap-4">
+    <!-- Repeat this card 12 times -->
+    <div class="card border-0" style="flex: 0 0 calc(33.333% - 1rem); max-width: calc(33.333% - 1rem); min-width: 300px;">
+      <img src="https://demo.ghost.io/content/images/size/w2000/2022/05/creating-a-custom-theme.png" class="card-img-top rounded" alt="..." style="height: 200px; object-fit: cover;">
+      <div class="card-body px-0">
+        <small class="text-muted">Getting Started</small>
+       
+        <h5 class="card-title fw-bold mt-2">Building your audience with subscriber signups
+         
+          
+          </h5>
+        <p class="card-text text-muted"> How Ghost allows you to turn anonymous readers into an audience of active subscribers, so you know what's working and what isn't..</p>
+        <small class="text-muted ">18 Mar 2021 · 2 min read</small>
+      </div>
+    </div>
+    <div class="card border-0" style="flex: 0 0 calc(33.333% - 1rem); max-width: calc(33.333% - 1rem); min-width: 300px;">
+      <img src="https://demo.ghost.io/content/images/size/w1000/2022/05/organizing-your-content.png" class="card-img-top rounded" alt="..." style="height: 200px; object-fit: cover;">
+      <div class="card-body px-0">
+        <small class="text-muted">Getting Started</small>
+        
+        <h5 class="card-title fw-bold mt-2">Selling premium memberships with recurring revenue</h5>
+        <p class="card-text text-muted">For creators and aspiring entrepreneurs looking to generate a sustainable recurring revenue stream</p>
+        <small class="text-muted">18 Mar 2021 · 1 min read</small>
+      </div>
+    </div>
+    <div class="card border-0" style="flex: 0 0 calc(33.333% - 1rem); max-width: calc(33.333% - 1rem); min-width: 300px;">
+      <img src="https://demo.ghost.io/content/images/size/w1000/2022/05/admin-settings.png" class="card-img-top rounded" alt="..." style="height: 200px; object-fit: cover;">
+      <div class="card-body px-0">
+        <small class="text-muted">Getting Started</small>
+        
+        <h5 class="card-title fw-bold mt-2">How to grow your business around an audience</h5>
+        <p class="card-text text-muted">A guide to collaborating with other staff users to publish, and some resources to help you with the.</p>
+        <small class="text-muted">18 Mar 2021 · 2 min read</small>
+      </div>
+    </div>
+    <div class="card border-0" style="flex: 0 0 calc(33.333% - 1rem); max-width: calc(33.333% - 1rem); min-width: 300px;">
+      <img src="https://demo.ghost.io/content/images/size/w1000/2022/05/app-integrations.png" class="card-img-top rounded" alt="..." style="height: 200px; object-fit: cover;">
+      <div class="card-body px-0">
+        <small class="text-muted">Getting Started</small>
+        
+        <h5 class="card-title fw-bold mt-2">Setting up apps and custom integrations</h5>
+        <p class="card-text text-muted">Work with all your favorite apps and tools or create your own custom integrations using the Ghost API.</p>
+        <small class="text-muted">18 Mar 2021 · 1 min read</small>
+      </div>
+    </div>
+    <div class="card border-0" style="flex: 0 0 calc(33.333% - 1rem); max-width: calc(33.333% - 1rem); min-width: 300px;">
+      <img src="https://demo.ghost.io/content/images/size/w1000/2018/10/testimg3-1.jpg" class="card-img-top rounded" alt="..." style="height: 200px; object-fit: cover;">
+      <div class="card-body px-0">
+        <small class="text-muted">Getting Started</small>
+        
+        <h5 class="card-title fw-bold mt-2">The Businessman & The Fisherman</h5>
+        <p class="card-text text-muted">An American businessman took a vacation to a small coastal Mexican village on doctor’s orders. Unable</p>
+        <small class="text-muted">12 Aug 2014 · 2 min read</small>
+      </div>
+    </div>
+    <div class="card border-0" style="flex: 0 0 calc(33.333% - 1rem); max-width: calc(33.333% - 1rem); min-width: 300px;">
+      <img src="https://demo.ghost.io/content/images/size/w1000/2018/10/testimg-cover.jpg" class="card-img-top rounded" alt="..." style="height: 200px; object-fit: cover;">
+      <div class="card-body px-0">
+        <small class="text-muted">Getting Started</small>
+        
+        <h5 class="card-title fw-bold mt-2">A Full and Comprehensive Style Test</h5>
+        <p class="card-text text-muted">Below is just about everything you’ll need to style in the theme. Check the source code to see the many</p>
+        <small class="text-muted">01 Sep 2012 · 5 min read</small>
+      </div>
+    </div>
+    <div class="card border-0" style="flex: 0 0 calc(33.333% - 1rem); max-width: calc(33.333% - 1rem); min-width: 300px;">
+      <img src="https://demo.ghost.io/content/images/size/w1000/2015/04/demo3.jpg" class="card-img-top rounded" alt="..." style="height: 200px; object-fit: cover;">
+      <div class="card-body px-0">
+        <small class="text-muted">Getting Started</small>
+        <span class="badge bg-danger ms-2">Featured</span>
+        <h5 class="card-title fw-bold mt-2">I Have a Dream</h5>
+        <p class="card-text text-muted">I am happy to join with you today in what will go down in history as the greatest demonstration for</p>
+        <small class="text-muted">28 Aug 1963 · 3 min read</small>
+      </div>
+    </div>
+    <div class="card border-0" style="flex: 0 0 calc(33.333% - 1rem); max-width: calc(33.333% - 1rem); min-width: 300px;">
+      <img src="https://demo.ghost.io/content/images/size/w1000/2015/04/demo4.jpg" class="card-img-top rounded" alt="..." style="height: 200px; object-fit: cover;">
+      <div class="card-body px-0">
+        <small class="text-muted">Getting Started</small>
+        
+        <h5 class="card-title fw-bold mt-2">The Purpose of Education</h5>
+        <p class="card-text text-muted">As I engage in the so-called "bull sessions" around and about the school, I too often find that most</p>
+        <small class="text-muted">12 Dec 1948 · 2 min read</small>
+      </div>
+    </div>
+    <div class="card border-0" style="flex: 0 0 calc(33.333% - 1rem); max-width: calc(33.333% - 1rem); min-width: 300px;">
+      <img src="https://demo.ghost.io/content/images/size/w1000/2015/04/demo6.jpg" class="card-img-top rounded" alt="..." style="height: 200px; object-fit: cover;">
+      <div class="card-body px-0">
+        <small class="text-muted">Getting Started</small>
+        
+        <h5 class="card-title fw-bold mt-2">Out to Sea</h5>
+        <p class="card-text text-muted">I had this story from one who had no business to tell it to me, or to any other. I may credit the seductive</p>
+        <small class="text-muted">24 Jul 1912 · 6 min read</small>
+      </div>
+    </div>
+    <div class="card border-0" style="flex: 0 0 calc(33.333% - 1rem); max-width: calc(33.333% - 1rem); min-width: 300px;">
+      <img src="https://demo.ghost.io/content/images/size/w1000/2015/04/demo5.jpg" class="card-img-top rounded" alt="..." style="height: 200px; object-fit: cover;">
+      <div class="card-body px-0">
+        <small class="text-muted">Getting Started</small>
+        
+        <h5 class="card-title fw-bold mt-2">Looking-Glass house</h5>
+        <p class="card-text text-muted">One thing was certain, that the white kitten had had nothing to do with it:— it was the black kitten’s</p>
+        <small class="text-muted">18 Mar 1871 · 3 min read</small>
+      </div>
+    </div>
+    <div class="card border-0" style="flex: 0 0 calc(33.333% - 1rem); max-width: calc(33.333% - 1rem); min-width: 300px;">
+      <img src="https://demo.ghost.io/content/images/size/w1000/2015/04/demo2.jpg" class="card-img-top rounded" alt="..." style="height: 200px; object-fit: cover;">
+      <div class="card-body px-0">
+        <small class="text-muted">Getting Started</small>
+        
+        <h5 class="card-title fw-bold mt-2">Down The Rabbit Hole</h5>
+        <p class="card-text text-muted">Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to d</p>
+        <small class="text-muted">26 Nov 1865 · 8 min read</small>
+      </div>
+    </div>
+    <div class="card border-0" style="flex: 0 0 calc(33.333% - 1rem); max-width: calc(33.333% - 1rem); min-width: 300px;">
+      <img src="https://demo.ghost.io/content/images/size/w1000/2015/04/demo1.jpg" class="card-img-top rounded" alt="..." style="height: 200px; object-fit: cover;">
+      <div class="card-body px-0">
+        <small class="text-muted">Getting Started</small>
+        <span class="badge bg-danger ms-2">Featured</span>
+        <h5 class="card-title fw-bold mt-2">Gettysburg Address</h5>
+        <p class="card-text text-muted">Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in</p>
+        <small class="text-muted">19 Nov 1863 · 1 min read</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+ 
+
+    
+    <footer class="bg-dark text-white py-5 mt-auto" style="height: 220px; width: 100%; margin: 0;">
+      <div class="container-fluid">
+          <div class="row justify-content-between align-items-center">
+              <!-- Left Side: Ghost © 2025 -->
+              <div class="col-12 col-md-4 text-md-start text-center mb-3 mb-md-0">
+                  <p class="mb-0">Ghost © 2025</p>
+              </div>
+      
+              <!-- Middle: Data & Privacy, Contact, Contribute -->
+              <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                  <p class="mb-0">
+                      <a href="#" class="text-white text-decoration-none ms-3">Data & Privacy</a> 
+                      <a href="#" class="text-white text-decoration-none ms-3">Contact</a> 
+                      <a href="#" class="text-white text-decoration-none ms-3">Contribute →</a>
+                  </p>
+              </div>
+      
+              <!-- Right Side: Powered by Ghost -->
+              <div class="col-12 col-md-4 text-md-end text-center">
+                  <p class="mb-0 text-decoration-none">Powered by Ghost</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+  
+  
+  
+    
+    
+
+
+    </div>
+
+</body>
+
+</html>
