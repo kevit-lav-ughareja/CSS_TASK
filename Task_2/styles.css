@@ -6,26 +6,42 @@ html {
   background-color: #f9f9f9;
   color: #333;
   height: 100%;
+  font-size: 1rem; /* 16px */
 }
+
+
 
 /* Hero Section */
 .hero {
   position: relative;
-  background-image: url("images/p1.jpeg"); 
-  background-size: cover;
   background-position: center;
   color: white;
-  height: 70vh;
+  height: 50vh; /* Adjust the height as needed */
   padding: 20px;
+}
+.hero img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .header {
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px; 
-  max-width: 1200px; 
-  margin: 0 auto; 
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 80px;
+  right: 0;
+  left: 0;
+  box-sizing: border-box;
 }
 
 .nav-links {
@@ -41,7 +57,7 @@ html {
 }
 
 .nav-links a:hover {
-  color: #ddd; 
+  color: #ddd;
 }
 
 .nav-actions {
@@ -75,164 +91,251 @@ html {
 }
 
 .center-content h1 {
-  font-size: 60px;
+  font-size: 5rem; /* 80px */
   margin: 0;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .center-content p {
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
   margin-top: 10px;
 }
 
-/* Main Section */
-.main-section {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr); 
-  grid-template-rows: auto; 
-  gap: 20px; 
-  padding: 20px;
-  max-width: 1200px; 
-  margin: 0 auto; 
-}
-.box-1 {
-  display: grid;
-  grid-template-columns: 4fr 3fr; 
-  gap: 30px; 
-  align-items: center; 
-  padding: 0; 
-  background-color: transparent; 
-  border: none; 
-  box-shadow: none; 
-  border-radius: 0; 
-  overflow: hidden; 
-  grid-column: span 6; 
-  margin-bottom: 40px; 
-}
-
-.box-1 .photo {
+/* Articles Section */
+.articles-section {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 25px 220px 25px 225px;
+  justify-content: center;
+  background-color: #f9f9f9;
+  margin-top: 0; /* Ensure no overlap */
 }
 
-.box-1 .photo img {
-  
-  max-width: 1800px;
-  height: 60vh; 
-  object-fit: cover; 
-  border-radius: 0; 
-}
-
-.box-1 .description {
+/* General Article Styles */
+.article {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: left; /* Align text to the left */
-  padding: 0; /* Remove padding to fit content fully */
+  /* background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  /* transition: transform 0.3s, box-shadow 0.3s; */
 }
 
-.box-1 .description h5 {
-  font-size: 18px; /* Slightly larger subtitle */
-  font-weight: 700; /* Make it bold */
-  color: #333; /* Dark color for "Getting Started" */
-  margin-bottom: 10px;
+/* .article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+} */
+
+.article img {
+  width: 100%;
+  height: auto;
+}
+
+.article-content {
+  padding-top: 15px;
+}
+
+.article-content h5 {
+  
+  font-weight: bold;
+  font-size: 0.9rem;
+  color:darkgray;
+  margin: 0 0 5px;
   text-transform: uppercase;
 }
 
-.box-1 .description h2 {
-  font-size: 36px; /* Larger heading size */
-  font-weight: 700;
-  line-height: 1.4;
-  margin-bottom: 15px;
-  color: #333; /* Dark color for the heading */
+.article-content h5 .featured {
+  color: #ff0095; /* Highlight color for "Featured" */
+  font-size: 0.8rem; /* Slightly smaller font size */
+  font-weight: bold; /* Optional: Different weight for emphasis */
+  display: inline-flex;
+  align-items: center;
+  gap: 5px; /* Add spacing between the icon and text */
+  margin-left: 5px;
 }
 
-.box-1 .description p {
-  font-size: 16px; /* Adjust paragraph text size */
+.article-content h5 .featured i {
+  font-size: 0.8rem; /* Adjust icon size */
+}
+.article-content h2 {
+  font-size: 1.5rem; /* 18px */
+  color: black;
+  margin: 0 0 10px;
+  line-height: 1.5; /* Adjust line height for better readability */
+  display: -webkit-box; /* Required for line clamping */
+  -webkit-line-clamp: 2; /* Limit to 2 lines */
+  -webkit-box-orient: vertical; /* Required for line clamping */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Add ellipsis (...) for truncated text */
+  word-wrap: break-word; /* Ensure long words break properly */
+}
+
+.article-content p {
+  font-size:1.0rem; /* 14px */
   color: #555;
-  line-height: 1.6;
-  margin-bottom: 10px;
+  margin: 0 0 10px;
 }
 
-.box-1 .description .meta {
-  font-size: 14px;
-  color: #333; /* Dark color for metadata */
-  font-weight: 700; /* Make it bold */
-  line-height: 1.4;
-  display: flex;
-  gap: 10px; /* Add spacing between date and reading time */
+.article-content span {
+  font-size: 0.9rem; /* 12px */
+  color: #aaa;
 }
 
-/* Second Row: Two boxes, each spanning 3 columns */
-.box-2, .box-3 {
-  grid-column: span 3; 
-  display: flex;
-  gap: 10px;
+/* First Row: One Article */
+.article-row-1 {
+  flex-direction: row;
+  
+  
 }
 
-.box-2 img, .box-3 img {
-  width: 50%; 
-}
-
-.box-2 .content, .box-3 .content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10px;
-}
-
-/* Third and Fourth Rows: Three boxes, each spanning 2 columns */
-.box-4, .box-5, .box-6,
-.box-7, .box-8, .box-9 {
-  grid-column: span 2; 
-}
-
-.box-4 img, .box-5 img, .box-6 img,
-.box-7 img, .box-8 img, .box-9 img {
-  width: 100%;
+.article-row-1 img {
+  width: 70%; /* Image takes half the width */
   height: auto;
-  margin-bottom: 10px;
 }
 
-/* Fifth and Sixth Rows: Full-width boxes */
-.box-10, .box-11 {
-  grid-column: span 6; 
+.article-row-1 .article-content {
+  width: 50%; /* Content takes the other half */
+  padding-left: 20px;
+  padding-top: 0;
+}
+.article-row-3 img,
+.article-row-4 img,
+.article-row-5 img,
+.article-row-6 img {
+  width: 100%; /* Ensure the image fills the container width */
+  height: 200px; /* Set a fixed height */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  /* Optional: Add rounded corners */
+}
+
+/* Second Row: Two Articles */
+.article-row-2 {
+  width: calc(50% - 20px); /* Two articles per row */
+}
+
+/* Third Row and Beyond: Three Articles Per Row */
+.article-row-3 {
+  width: calc(33.333% - 20px); /* Three articles per row */
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .article {
+    width: calc(50% - 20px);
+  }
+
+  .article-row-1 {
+    flex-direction: column;
+  }
+
+  .article-row-1 img,
+  .article-row-1 .article-content {
+    width: 100%;
+  }
+
+  .article-row-2 {
+    width: 100%; /* One article per row */
+  }
+
+  .article-row-3 {
+    width: calc(50% - 20px); /* Two articles per row */
+  }
+}
+
 @media (max-width: 768px) {
+  .article {
+    width: calc(100% - 20px);
+  }
+
+  .article-row-3 {
+    width: 100%; /* One article per row */
+  }
+
+  /* Header */
   .header {
-    flex-direction: column; 
-    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background: white;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem; /* 24px */
+    cursor: pointer;
+    color: #333;
+  }
+
+  .nav-actions {
+    margin-top: 10px;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.75rem; /* 12px */
+    padding: 15px;
+  }
+
+  .footer-links {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-
-  .main-section {
-    grid-template-columns: repeat(2, 1fr); 
-    padding: 10px;
-  }
-
-  .box-1 {
-    grid-template-columns: 1fr; 
-    height: auto; 
-  }
-
-  .box-2, .box-3 {
-    grid-column: span 2; 
+    gap: 10px;
   }
 }
 
 /* Footer */
-.main-footer {
-  background-color: #444;
-  color: white;
-  text-align: center;
-  padding: 10px 20px;
-  font-size: 0.9rem;
+footer {
+    background-color: #2b5885;
+    color: #fff;
+    padding: 20px 40px; /* Add padding for left and right spacing */
+    font-size: 0.875rem; /* 14px */
+    height: 25vh;
+    
 }
+
+.footer-content {
+    display: flex;
+    color: #fff;
+    justify-content: space-between; /* Space out left, center, and right sections */
+    align-items: center; /* Vertically align items */
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Ensure responsiveness on smaller screens */
+}
+.footer-left{
+  display: flex;
+  flex-direction: row;
+  justify-self: flex-start;
+}
+.footer-content a:hover {
+  color: #ddd; /* Optional: Lighter color on hover */
+}
+
+
+
+
+
+
+
+
+
