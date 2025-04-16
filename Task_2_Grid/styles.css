@@ -1,0 +1,290 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+.main-container {
+    width: 100%;
+}
+
+.main-section {
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+/* Header Wrapper */
+.header-wrapper {
+    height: 60vh;
+    background-image: url("https://images.unsplash.com/photo-1557682250-33bd709cbe85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDI1fHxncmFkaWVudHxlbnwwfHx8fDE2NTMxOTA4NjY&ixlib=rb-1.2.1&q=80&w=2000");
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    color: white;
+}
+
+/* Header */
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 20px 40px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.signin {
+    text-decoration: none;
+    color: #fff;
+}
+
+.subscribe {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.subscribe:hover {
+    background-color: #eee;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* First Row: Image Left, Text Right */
+.first-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+    align-items: start;
+}
+
+.first-row .image {
+    flex: 1 1 50%;
+}
+
+.first-row .image img {
+    width: 100%;
+    
+}
+
+.first-row .text {
+    flex: 1 1 300px;
+}
+
+.first-row .text h2 {
+    font-size: 2rem;
+}
+
+.first-row .text p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Second Row: Two Posts */
+.two-posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.two-posts .post {
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+.two-posts .post img {
+    width: 100%;
+    
+}
+
+.two-posts .post p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+
+.Third-posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .Third-posts .post {
+    flex: 1 1 calc(33.33% - 20px); /* 3 per row with 20px gap */
+    
+  }
+  
+  .Third-posts .post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    
+  }
+  
+  .Third-posts .post h3 {
+    margin-top: 12px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .Third-posts .post h2 {
+    font-size: 1.3rem;
+    margin: 8px 0;
+    color: #222;
+  }
+  
+  .Third-posts .post p {
+    font-size: 0.95rem;
+    color: #444;
+  }
+  
+  .post-meta {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 10px;
+  }
+  /* Footer Section */
+.footer {
+  background-color: #000; /* Black background */
+  color: #cecccc; /* White text */
+  height: 150px; /* Set a fixed height for the footer */
+  display: flex;
+  align-items: flex-start; /* Align content to the top */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align content to the top */
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px; /* Add padding for spacing inside the footer */
+}
+h4{
+    color: darkgray;
+}
+.footer-left {
+  flex: 1;
+  text-align: left;
+}
+
+.footer-center {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-center a {
+  color: #cecccc;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 0.9rem;
+}
+.footer p:hover {
+    color: #fff; /* Change text color to white on hover */
+    cursor: pointer; /* Optional: Change cursor to pointer */
+  }
+  .footer-center a:hover {
+    color: #fff; /* Change text color to white on hover */
+    cursor: pointer; /* Optional: Change cursor to pointer */
+  }
+
+
+.footer-right {
+  flex: 1;
+  text-align: right;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+  @media (max-width: 1024px) {
+    .Third-posts .post {
+      flex: 1 1 calc(50% - 20px); /* 2 per row */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .Third-posts .post {
+      flex: 1 1 100%; /* 1 per row on small screens */
+    }
+  }
+  
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .wrap-posts .post {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .header-left,
+    .header-right {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .first-row {
+        flex-direction: column;
+    }
+
+    .wrap-posts .post,
+    .two-posts .post {
+        flex: 1 1 100%;
+    }
+}
