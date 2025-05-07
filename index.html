@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ghost</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://demo.ghost.io/content/images/size/w256h256/2021/03/favicon.png"
+    />
+    <script defer>
+      document.addEventListener("DOMContentLoaded", () => {
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+          navMenu.classList.toggle("active");
+
+          if (hamburger.textContent === "☰") {
+            hamburger.textContent = "✖";
+          } else {
+            hamburger.textContent = "☰";
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <header class="site-header">
+        <div class="container">
+          <nav class="nav-menu">
+            <div class="nav-list-left">
+              <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Collection</a></li>
+                <li><a href="#">Author</a></li>
+                <li><a href="#">Portal</a></li>
+              </ul>
+            </div>
+
+            <div class="nav-list-right">
+              <ul class="nav-list">
+                <li class="search-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="20"
+                    height="20"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    ></path>
+                  </svg>
+                </li>
+                <li><a href="#" class="sign-in">Sign in</a></li>
+                <li><a href="#" class="subscribe">Subscribe</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="hamburger">&#9776;</div>
+        </div>
+      </header>
+
+      <section class="hero">
+        <h1 class="hero-title">Ghost</h1>
+        <p class="hero-subtitle">The professional publishing platform</p>
+      </section>
+    </div>
+    <main class="post">
+      <section class="first_container">
+        <div class="image-container">
+          <img src="./images/P1.jpg" alt="Main Image" />
+        </div>
+
+        <div class="info-card">
+          <p class="tag">Getting Started</p>
+          <h2 class="main_title">
+            Start here for a quick overview of everything you need to know
+          </h2>
+          <p class="description">
+            We've crammed the most important information to help you get started
+            with Ghost into this one post. It's your cheat-sheet to get started,
+            and your...
+          </p>
+          <p class="meta">18 Mar 2021 ・ 2 min read</p>
+        </div>
+      </section>
+      <section class="second_container">
+        <div>
+          <div class="image-container">
+            <img src="./images/post_2.jpg" alt="Main Image" />
+          </div>
+
+          <div class="info-card">
+            <p class="tag">
+              <span class="p1">Getting Started</span>
+              <svg
+                class="featured-icon"
+                width="16"
+                height="17"
+                viewBox="0 0 16 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.49365 4.58752C3.53115 6.03752 2.74365 7.70002 2.74365 9.25002C2.74365 10.6424 3.29678 11.9778 4.28134 12.9623C5.26591 13.9469 6.60127 14.5 7.99365 14.5C9.38604 14.5 10.7214 13.9469 11.706 12.9623C12.6905 11.9778 13.2437 10.6424 13.2437 9.25002C13.2437 6.00002 10.9937 3.50002 9.16865 1.68127L6.99365 6.25002L4.49365 4.58752Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              <span class="featured-name">Featured</span>
+            </p>
+            <h2 class="sub-title">
+              Customizing your brand and design settings
+            </h2>
+            <p class="sub_description">
+              How to tweak a few settings in Ghost to transform your site from a
+              generic template to a custom brand with style and personality.
+            </p>
+            <p class="sub_meta">18 Mar 2021 ・ 2 min read</p>
+          </div>
+        </div>
+        <div>
+          <div class="image-container">
+            <img src="./images/post_5.jpg" alt="Main Image" />
+          </div>
+
+          <div class="info-card">
+            <p class="tag">Getting Started</p>
+            <h2 class="sub-title">
+              Writing and managing content in Ghost, an advanced guide
+            </h2>
+            <p class="sub_description">
+              A full overview of all the features built into the Ghost editor,
+              including powerful workflow automations to speed up your creative
+              process.
+            </p>
+            <p class="meta">18 Mar 2021 ・ 2 min read</p>
+          </div>
+        </div>
+      </section>
+      <section class="third_container">
+        <div>
+          <div class="image-container">
+            <img src="./images/post_5.jpg" alt="Main Image" />
+          </div>
+
+          <div class="info-card">
+            <p class="tag">Getting Started</p>
+            <h2 class="post-title">
+              Building your audience with subscriber signups
+            </h2>
+            <p class="post_description">
+              How Ghost allows you to turn anonymous readers into an audience of
+              active subscribers, so you know what's working and what isn't.
+            </p>
+            <p class="meta">18 Mar 2021 ・ 2 min read</p>
+          </div>
+        </div>
+        <div>
+          <div class="image-container locked">
+            <img src="./images/post_6.jpg" alt="Main Image" />
+            <div class="overlay">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.25 6.875H3.75C3.40482 6.875 3.125 7.15482 3.125 7.5V16.25C3.125 16.5952 3.40482 16.875 3.75 16.875H16.25C16.5952 16.875 16.875 16.5952 16.875 16.25V7.5C16.875 7.15482 16.5952 6.875 16.25 6.875Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M7.1875 6.875V4.0625C7.1875 3.31658 7.48382 2.60121 8.01126 2.07376C8.53871 1.54632 9.25408 1.25 10 1.25C10.7459 1.25 11.4613 1.54632 11.9887 2.07376C12.5162 2.60121 12.8125 3.31658 12.8125 4.0625V6.875"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M10 13.125C10.6904 13.125 11.25 12.5654 11.25 11.875C11.25 11.1846 10.6904 10.625 10 10.625C9.30964 10.625 8.75 11.1846 8.75 11.875C8.75 12.5654 9.30964 13.125 10 13.125Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              <span class="overlay-text">Prime Members Only</span>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <p class="tag">Getting Started</p>
+            <h2 class="post-title">
+              Selling premium memberships with recurring revenue
+            </h2>
+            <p class="post_description">
+              For creators and aspiring entrepreneurs looking to generate a
+              sustainable recurring revenue stream from their creative work,
+              Ghost has built-in payments allowing you to create a subscription
+              commerce business.
+            </p>
+            <p class="meta">18 Mar 2021 ・ 2 min read</p>
+          </div>
+        </div>
+        <div>
+          <div class="image-container">
+            <img src="./images/post_7.jpg" alt="Main Image" />
+          </div>
+
+          <div class="info-card">
+            <p class="tag">Getting Started</p>
+            <h2 class="post-title">
+              How to grow your business around an audience
+            </h2>
+            <p class="post_description">
+              A guide to collaborating with other staff users to publish, and
+              some resources to help you with the next steps of growing your
+              business
+            </p>
+            <p class="meta">18 Mar 2021 ・ 2 min read</p>
+          </div>
+        </div>
+        <div>
+          <div class="image-container">
+            <img src="./images/Post_8.jpg" alt="Main Image" />
+          </div>
+
+          <div class="info-card">
+            <p class="tag">Getting Started</p>
+            <h2 class="post-title">Setting up apps and custom integrations</h2>
+            <p class="post_description">
+              Work with all your favorite apps and tools or create your own
+              custom integrations using the Ghost API.
+            </p>
+            <p class="meta">18 Mar 2021 ・ 2 min read</p>
+          </div>
+        </div>
+        <div>
+          <div class="image-container">
+            <img src="./images/post_18.jpg" alt="Main Image" />
+          </div>
+
+          <div class="info-card">
+            <p class="tag">Fables</p>
+            <h2 class="post-title">The Businessman & The Fisherman</h2>
+            <p class="post_description">
+              An American businessman took a vacation to a small coastal Mexican
+              village on doctor’s orders. Unable to sleep after an urgent phone
+              call from the office the first morning, he walked out to the pier
+              to clear his head. A small boat with just one fisherman had
+              docked, and inside the boat were several large yellowfin tuna. The
+              American complimented the Mexican on the quality of his fish.
+            </p>
+            <p class="meta">18 Mar 2021 ・ 2 min read</p>
+          </div>
+        </div>
+        <div>
+          <div class="image-container">
+            <img src="./images/post_17.jpg" alt="Main Image" />
+          </div>
+
+          <div class="info-card">
+            <p class="tag"></p>
+            <h2 class="post-title">A Full and Comprehensive Style Test</h2>
+            <p class="post_description">
+              Below is just about everything you’ll need to style in the theme.
+              Check the source code to see the many embedded elements within
+              paragraphs.
+            </p>
+            <p class="meta">18 Mar 2021 ・ 2 min read</p>
+          </div>
+        </div>
+        <div>
+          <div class="image-container">
+            <img src="./images/post_12.jpg" alt="Main Image" />
+          </div>
+
+          <div class="info-card">
+            <p class="tag">Speeches</p>
+            <h2 class="post-title">I Have a Dream</h2>
+            <p class="post_description">
+              I am happy to join with you today in what will go down in history
+              as the greatest demonstration for freedom in the history of our
+              nation.
+            </p>
+            <p class="meta">18 Mar 2021 ・ 2 min read</p>
+          </div>
+        </div>
+        <div>
+          <div class="image-container">
+            <img src="./images/post_17.jpg" alt="Main Image" />
+          </div>
+
+          <div class="info-card">
+            <p class="tag">Speeches</p>
+            <h2 class="post-title">The Purpose of Education</h2>
+            <p class="post_description">
+              As I engage in the so-called "bull sessions" around and about the
+              school, I too often find that most college men have a
+              misconception of the purpose of education. Most of the "brethren"
+              think that education should equip them with the proper instruments
+              of exploitation so that they can forever trample over the masses.
+              Still others think that education should furnish them with noble
+              ends rather than means to an end.
+            </p>
+            <p class="meta">18 Mar 2021 ・ 2 min read</p>
+          </div>
+        </div>
+        <div>
+          <div class="image-container">
+            <img src="./images/post_18.jpg" alt="Main Image" />
+          </div>
+
+          <div class="info-card">
+            <p class="tag">Fiction</p>
+            <h2 class="post-title">Out to Sea</h2>
+            <p class="post_description">
+              I had this story from one who had no business to tell it to me, or
+              to any other. I may credit the seductive influence of an old
+              vintage upon the narrator for the beginning of it, and my own
+              skeptical incredulity during the days that followed for the
+              balance of the strange tale.
+            </p>
+            <p class="meta">18 Mar 2021 ・ 2 min read</p>
+          </div>
+        </div>
+        <div>
+          <div class="image-container">
+            <img src="./images/post_9.jpg" alt="Main Image" />
+          </div>
+
+          <div class="info-card">
+            <p class="tag">Fiction</p>
+            <h2 class="post-title">Looking-Glass house</h2>
+            <p class="post_description">
+              One thing was certain, that the white kitten had had nothing to do
+              with it:— it was the black kitten’s fault entirely. For the white
+              kitten had been having its face washed by the old cat for the last
+              quarter of an hour (and bearing it pretty well, considering); so
+              you see that it couldn’t have had any hand in the mischief.
+            </p>
+            <p class="meta">18 Mar 2021 ・ 2 min read</p>
+          </div>
+        </div>
+        <div>
+          <div class="image-container">
+            <img src="./images/post_17.jpg" alt="Main Image" />
+          </div>
+
+          <div class="info-card">
+            <p class="tag">
+              <span class="p1">Fiction</span>
+              <svg
+                class="featured-icon"
+                width="16"
+                height="17"
+                viewBox="0 0 16 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.49365 4.58752C3.53115 6.03752 2.74365 7.70002 2.74365 9.25002C2.74365 10.6424 3.29678 11.9778 4.28134 12.9623C5.26591 13.9469 6.60127 14.5 7.99365 14.5C9.38604 14.5 10.7214 13.9469 11.706 12.9623C12.6905 11.9778 13.2437 10.6424 13.2437 9.25002C13.2437 6.00002 10.9937 3.50002 9.16865 1.68127L6.99365 6.25002L4.49365 4.58752Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              <span class="featured-name">Featured</span>
+            </p>
+            <h2 class="post-title">Down The Rabbit Hole</h2>
+            <p class="post_description">
+              Alice was beginning to get very tired of sitting by her sister on
+              the bank, and of having nothing to do: once or twice she had
+              peeped into the book her sister was reading, but it had no
+              pictures or conversations in it, 'and what is the use of a book,'
+              thought Alice 'without pictures or conversation?'
+            </p>
+            <p class="meta">18 Mar 2021 ・ 2 min read</p>
+          </div>
+        </div>
+        <div>
+          <div class="image-container">
+            <img src="./images/post_13.jpg" alt="Main Image" />
+          </div>
+
+          <div class="info-card">
+            <p class="tag">
+              <svg
+                class="featured-icon"
+                width="16"
+                height="17"
+                viewBox="0 0 16 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.49365 4.58752C3.53115 6.03752 2.74365 7.70002 2.74365 9.25002C2.74365 10.6424 3.29678 11.9778 4.28134 12.9623C5.26591 13.9469 6.60127 14.5 7.99365 14.5C9.38604 14.5 10.7214 13.9469 11.706 12.9623C12.6905 11.9778 13.2437 10.6424 13.2437 9.25002C13.2437 6.00002 10.9937 3.50002 9.16865 1.68127L6.99365 6.25002L4.49365 4.58752Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              <span class="featured-name">Featured</span>
+            </p>
+            <h2 class="post-title">Gettysburg Address</h2>
+            <p class="post_description">
+              Fourscore and seven years ago our fathers brought forth on this
+              continent, a new nation, conceived in Liberty, and dedicated to
+              the proposition that all men are created equal.
+            </p>
+            <p class="meta">18 Mar 2021 ・ 2 min read</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <button class="subscribe-btn">
+      <svg
+        width="26"
+        height="26"
+        viewBox="0 0 26 26"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        style="width: 24px; height: 24px; color: rgb(255, 255, 255)"
+      >
+        <path
+          d="M17.903 12.016c-.332-1.665-1.491-3.032-3.031-3.654M11.037 8.4C9.252 9.163 8 10.935 8 13c0 .432.055.85.158 1.25M10.44 17.296c.748.447 1.624.704 2.56.704 1.71 0 3.22-.858 4.12-2.167M15.171 21.22c3.643-.96 6.329-4.276 6.329-8.22 0-1.084-.203-2.121-.573-3.075M18.611 6.615C17.114 5.3 15.151 4.5 13 4.5c-2.149 0-4.112.797-5.608 2.113M5.112 9.826c-.395.98-.612 2.052-.612 3.174 0 4.015 2.783 7.38 6.526 8.27"
+          stroke="#fff"
+          stroke-width="1.5"
+          stroke-linecap="round"
+        ></path>
+        <path
+          d="M8.924 24.29c1.273.46 2.645.71 4.076.71 5.52 0 10.17-3.727 11.57-8.803M6.712 2.777C3.285 4.89 1 8.678 1 13c0 3.545 1.537 6.731 3.982 8.928M24.849 11.089C23.933 5.369 18.977 1 13 1c-.69 0-1.367.058-2.025.17"
+          stroke="#fff"
+          stroke-width="1.5"
+          stroke-linecap="round"
+        ></path>
+      </svg>
+      <span>Subscribe</span>
+    </button>
+
+    <footer class="footer_container">
+      <div class="footer">
+        <div class="footer_left">
+          <p><strong>Ghost © 2025 </strong></p>
+        </div>
+        <div class="footer_links">
+          <p>Data & privacy</p>
+          <p>Contact</p>
+          <p>Contribute →</p>
+        </div>
+        <div class="footer_right"><p>Powered by Ghost</p></div>
+      </div>
+    </footer>
+  </body>
+</html>
