@@ -1,0 +1,470 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header-wrapper {
+  background-image: url(images/Header.jpg);
+  background-size: cover;
+  background-position: top center;
+  height: 60vh;
+}
+
+.site-header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left .nav-list {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-left .nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.search-icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.sign-in {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.subscribe {
+  background-color: white;
+  color: black;
+  padding: 0.5rem 1.2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Hero section */
+.hero {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, Times, serif;
+  color: white;
+  text-align: center;
+}
+/* Post container */
+.post {
+position: relative;
+text-align: left;
+margin-bottom: 20px;
+}
+
+/* Image container with blur effect */
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  filter: blur(5px); /* Apply blur effect */
+  transition: filter 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.image-container:hover img {
+  filter: blur(5px); /* Keep the blur effect on hover */
+}
+
+/* Overlay for lock icon and text */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  color: white; /* White text color */
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 1; /* Fully visible */
+  pointer-events: none; /* Prevent interaction with the overlay */
+}
+
+/* Flexbox for lock icon and text */
+.overlay svg {
+  margin-right: 10px; /* Add spacing between the icon and text */
+}
+
+.overlay p {
+  margin: 0;
+  color: rgb(177, 15, 15); /* Set text color to white */
+  font-size: 24px; /* Increase the font size */
+  font-weight: 700; /* Make the text bold */
+  display: flex;
+  align-items: center; /* Align text vertically with the icon */
+}
+.main-container {
+  width: 100%;
+}
+
+.main-section {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Header Wrapper */
+.header-wrapper {
+  height: 60vh;
+  background-image: url("https://images.unsplash.com/photo-1557682250-33bd709cbe85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDI1fHxncmFkaWVudHxlbnwwfHx8fDE2NTMxOTA4NjY&ixlib=rb-1.2.1&q=80&w=2000");
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  color: white;
+}
+
+/* Header */
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 20px 40px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.signin {
+  text-decoration: none;
+  color: #fff;
+}
+
+.subscribe {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.subscribe:hover {
+  background-color: #eee;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+/* First Row: Image Left, Text Right */
+.first-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4vmin;
+  padding: 40px 40px;
+  align-items: start;
+}
+
+.first-row .image {
+  flex: 1 1 50%;
+}
+
+.first-row .image img {
+  width: 100%;
+  
+}
+
+.first-row .text {
+  flex: 1 1 300px;
+}
+
+.first-row .text h2 {
+  font-size: 2rem;
+}
+
+.first-row .text p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+/* Second Row: Two Posts */
+.two-posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+  justify-content: space-between;
+}
+.two-posts h2{
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.two-posts .post {
+  flex: 1 1 calc(50% - 20px);
+  box-sizing: border-box;
+}
+
+.two-posts .post img {
+  width: 100%;
+  
+}
+
+.two-posts .post p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+
+.Third-posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+}
+
+.Third-posts .post {
+  flex: 1 1 calc(33.33% - 20px); /* 3 per row with 20px gap */
+  
+}
+
+.Third-posts .post img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  
+}
+
+.Third-posts .post h3 {
+  margin-top: 12px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.Third-posts .post h2 {
+  font-size: 1.3rem;
+  margin: 8px 0;
+  color: #222;
+}
+.fa-fire {
+  color: #ff0095;
+  font-size: small;
+  margin-right: 5px; /* Add spacing between the icon and text */
+}
+
+.featured-text {
+  font-weight: bold; /* Make the text bold */
+}
+.Third-posts .post p {
+  font-size: 0.95rem;
+  color: #444;
+  display: -webkit-box; /* Use flexbox for truncation */
+  -webkit-line-clamp: 2; /* Limit to 2 lines */
+  -webkit-box-orient: vertical; /* Set the box orientation to vertical */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; 
+}
+
+.post-meta {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 10px;
+}
+/* Footer Section */
+.footer {
+background-color: #000; /* Black background */
+color: #cecccc; /* White text */
+height: 150px; /* Set a fixed height for the footer */
+display: flex;
+align-items: flex-start; /* Align content to the top */
+}
+
+.footer-container {
+display: flex;
+justify-content: space-between;
+align-items: flex-start; /* Align content to the top */
+flex-wrap: wrap;
+width: 100%;
+padding: 20px; /* Add padding for spacing inside the footer */
+}
+h4{
+  color: darkgray;
+}
+.footer-left {
+flex: 1;
+text-align: left;
+}
+
+.footer-center {
+flex: 1;
+text-align: center;
+}
+
+.footer-center a {
+color: #cecccc;
+text-decoration: none;
+margin: 0 10px;
+font-size: 0.9rem;
+}
+.footer p:hover {
+  color: #fff; /* Change text color to white on hover */
+  cursor: pointer; /* Optional: Change cursor to pointer */
+}
+.footer-center a:hover {
+  color: #fff; /* Change text color to white on hover */
+  cursor: pointer; /* Optional: Change cursor to pointer */
+}
+
+
+.footer-right {
+flex: 1;
+text-align: right;
+}
+
+.footer p {
+margin: 0;
+font-size: 0.9rem;
+}
+@media (max-width: 1024px) {
+  .Third-posts .post {
+    flex: 1 1 calc(50% - 20px); /* 2 per row */
+  }
+}
+
+@media (max-width: 600px) {
+  .Third-posts .post {
+    flex: 1 1 100%; /* 1 per row on small screens */
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .wrap-posts .post {
+      flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+      grid-template-columns: 1fr;
+      text-align: center;
+  }
+
+  .header-left,
+  .header-right {
+      justify-content: flex-end;
+      flex-wrap: wrap;
+  }
+
+  .first-row {
+      flex-direction: column;
+  }
+
+  .wrap-posts .post,
+  .two-posts .post {
+      flex: 1 1 100%;
+  }
+}
+/* Default styling */
+.nav a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .nav,
+  .signin,
+  .subscribe {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+
